@@ -1,0 +1,25 @@
+﻿[project]
+name = "pocketcluster"
+version = "0.1.0"
+description = "A distributed CPU compute cluster powered by Android phones (hackathon MVP)."
+readme = "README.md"
+requires-python = ">=3.11"
+# Coordinator (laptop) dependencies. The Android worker is stdlib-only and
+# deliberately NOT listed here, so it installs on Termux without compiling.
+dependencies = [
+    "fastapi==0.162.5",
+    "uvicorn==0.54.0",
+    "httpx==0.28.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.2.0",
+    "ruff==0.17.4",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
