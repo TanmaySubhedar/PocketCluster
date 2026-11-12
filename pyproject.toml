@@ -1,4 +1,4 @@
-﻿[project]
+[project]
 name = "pocketcluster"
 version = "0.1.0"
 description = "A distributed CPU compute cluster powered by Android phones (hackathon MVP)."
